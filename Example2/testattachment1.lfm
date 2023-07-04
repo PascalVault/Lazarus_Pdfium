@@ -1,0 +1,139 @@
+object Form1: TForm1
+  Left = 399
+  Height = 517
+  Top = 106
+  Width = 852
+  Caption = 'Test: Attachment'
+  ClientHeight = 497
+  ClientWidth = 852
+  Menu = MainMenu1
+  OnClose = FormClose
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '2.2.2.0'
+  object GroupBox1: TGroupBox
+    Left = 498
+    Height = 497
+    Top = 0
+    Width = 354
+    Align = alRight
+    Caption = 'Attachment'
+    ClientHeight = 477
+    ClientWidth = 350
+    TabOrder = 0
+    object lbox1: TListBox
+      Left = 0
+      Height = 79
+      Top = 0
+      Width = 350
+      Align = alTop
+      Font.CharSet = ANSI_CHARSET
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ItemHeight = 0
+      OnSelectionChange = lbox1SelectionChange
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Memo1: TMemo
+      Left = 0
+      Height = 398
+      Top = 79
+      Width = 350
+      Align = alClient
+      Color = clTeal
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnEnter = Memo1Enter
+      OnExit = Memo1Exit
+      ParentFont = False
+      ScrollBars = ssAutoBoth
+      TabOrder = 1
+    end
+  end
+  object od1: TOpenDialog
+    Filter = 'Pdf file (*.pdf)|*.pdf'
+    Options = [ofFileMustExist, ofEnableSizing, ofViewDetail]
+    Left = 144
+    Top = 16
+  end
+  object MainMenu1: TMainMenu
+    Left = 240
+    Top = 16
+    object mnu1OpenPdf: TMenuItem
+      Caption = '&File'
+      object mnu11Open: TMenuItem
+        Caption = '&Open'
+        OnClick = mnu11OpenClick
+      end
+      object mnu12Save: TMenuItem
+        Caption = 'Save'
+        OnClick = mnu12SaveClick
+      end
+      object mnu13Close: TMenuItem
+        Caption = 'Close'
+        OnClick = mnu13CloseClick
+      end
+      object Separator3: TMenuItem
+        Caption = '-'
+      end
+      object mnu19Quit: TMenuItem
+        Caption = 'Quit'
+        OnClick = mnu19QuitClick
+      end
+    end
+    object mnu2: TMenuItem
+      Caption = 'Test'
+      Enabled = False
+      object mnu21Attach: TMenuItem
+        Caption = 'Add Attachment'
+        OnClick = mnu21AttachClick
+      end
+      object mnu22Del: TMenuItem
+        Caption = 'Delete Attachment'
+        OnClick = mnu22DelClick
+      end
+      object Separator2: TMenuItem
+        Caption = '-'
+      end
+      object mnu23: TMenuItem
+        Caption = 'Convert Page to Image'
+        OnClick = mnu23PgImgClick
+      end
+    end
+    object mnu3: TMenuItem
+      Caption = 'View'
+      object mnu31Enlarge: TMenuItem
+        Caption = 'Enlarge'
+        ShortCut = 16603
+        OnClick = mnu31EnlargeClick
+      end
+      object mnu32Shrink: TMenuItem
+        Caption = 'Shrink'
+        ShortCut = 16605
+        OnClick = mnu32ShrinkClick
+      end
+      object mn33Fit: TMenuItem
+        Caption = 'AutoFit'
+        ShortCut = 16571
+        OnClick = mn33FitClick
+      end
+      object Separator1: TMenuItem
+        Caption = '-'
+      end
+      object mnu34Prev: TMenuItem
+        Caption = 'Previous Page'
+        ShortCut = 16417
+        OnClick = mnu34PrevClick
+      end
+      object mnu35Next: TMenuItem
+        Caption = 'Next Page'
+        ShortCut = 16418
+        OnClick = mnu35NextClick
+      end
+    end
+  end
+end
