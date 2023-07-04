@@ -1,8 +1,10 @@
-{ 2023-03-22
-  FreePascal port for ahausladen/PdfiumLib (Updated to chromium/5052)
-                                https://github.com/ahausladen/PdfiumLib
-  Tested with: Lazarus(ver2.2.2)/Freepascal(version 3.2.2)
-}
+//2023-07-04
+//FreePascal port for ahausladen/PdfiumLib (Updated to chromium/5868)
+//https://github.com/ahausladen/PdfiumLib
+//https://github.com/kjteng/PdfiumLib/
+//Tested with: Lazarus(ver2.2.2)/Freepascal(version 3.2.2)
+//With updates by domasz
+//works with 32 & 64 bit Lazarus
 {$A8,B-,E-,F-,G+,H+,I+,J-,K-,M-,N-,P+,Q-,R-,S-,T-,U-,V+,X+,Z1}
 {$DEFINE FPC}
 //{$DEFINE FORM_DISABLED}  // do not use fillable pdf (pdf form)
