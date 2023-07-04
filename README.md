@@ -3,11 +3,11 @@ Example of a PDF VCL Control using PDFium
 
 ## Requirements
 pdfium.dll (x86/x64) from the [pdfium-binaries](https://github.com/bblanchon/pdfium-binaries)
-Binary release: [chromium/5052](https://github.com/bblanchon/pdfium-binaries/releases/tag/chromium%2F5052)
+Binary release: [chromium/5868](https://github.com/bblanchon/pdfium-binaries/releases/tag/chromium%2F5868)
 
 ## Features
 This is a FreePascal port for PdfiumLib (Updated to chromium/5052) from                                https://github.com/ahausladen/PdfiumLib
-I have compiled it with Lazarus(ver2.2.2)/Freepascal(version 3.2.2). 
+Works with Lazarus(ver2.2.2)/Freepascal(version 3.2.2) both 32 ad 64 bit.
 
 The library/components works on some of my personal project (mainly to render pdf file).
 
